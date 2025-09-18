@@ -186,7 +186,7 @@ while command!="stop":
 print("Execution stopped.")
 
 names = ['Alice', 'Bob', 'Carmen', 'David', 'Eve', 'Fred', 'George', 'Harry']
-#print(names[-3: -7: -1])
+#print(names[-3: -7: -1]) #index, silicing
 #start: stop: step
 # print(names[::-1])
 for item in names:
@@ -211,4 +211,78 @@ numbers = [4, 1, -5, 9, -1, 12, -3]
 # numbers.sort(reverse=True)
 # numbers.sort()
 print(numbers)
+
+
+numbers = [1, 2, 8, 3, 4, 5]
+list = []
+#newlist2 = list()
+for num in numbers:
+    list.append(num*2)
+    print(list)
+
+numbers = [35, 8, 95, 22, 18, 62, 9, 14, 29] #even number list
+even = []
+for num in numbers:
+    if num % 2 == 0:
+        even.append(num)
+
+print(even)
+
+
+numbers = [1,3,5,7,9]
+#list comprehension
+#list for interation in filter
+#new_numbers = [2*number for number in numbers]
+
+new_numbers = [number*number for number in numbers if numbers]
+print(new_numbers)
+
+square
+numbers = [1,3,5,7,9]
+even = []
+for num in numbers:
+    even.append(num**2)
+
+print(even)
+#new_numbers = [number*number for number in numbers if numbers]
+#print(new_numbers)
+
+for num in range(6):
+    print('Hello')
+
+print(list(range(5)))
+
+tup =(1, 2, 3, 4, 5, 8, 9, 15)
+print(tup[0::2])
+
+lis = [4,6,7,6,1, 2, 3, 4, 5, 8, 6, 9, 15]
+
+print(lis.count(6))
+
+lis = [4,6,7,6,1, 2, 3, 4, 5, 8, 6, 9, 15]
+counter = 0
+for num in lis:
+    if num ==6:
+        counter = counter + 1
+print(counter)
+#print(lis.count(6))
+
+A = ('a', 'b', 'c', 'd')
+print(len(A))
+
+A = (1,2,3)
+B = (4,5,6)
+len = len(A)
+list = []
+for num in range(len):
+    list.append(A[num] + B[num])
+new = tuple(list)
+print(new)
+
+#mylis = [A[num] + B[num] for num in range(lent)]
+
+list = [2, 3, 6, 2, 3, 5, 6, 2, 3, 4]
+new = set(list)
+print(new)
+
 '''
